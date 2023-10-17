@@ -1,0 +1,15 @@
+name: 'Unet-RGB'
+
+train_dir: '../src/dataset/Train'
+train_gt_dir: '../src/dataset/Train_gt'
+val_train_dir: '../src/dataset/Test'
+val_gt_dir: '../src/dataset/Test_gt'
+save_path: '../Unet/save'
+
+need_transform : True
+need_L1L2 : False
+
+ratio: 1.0
+batch_size: 2
+epochs: 100
+learning_rate: 0.00005

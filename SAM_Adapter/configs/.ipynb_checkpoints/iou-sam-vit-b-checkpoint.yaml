@@ -1,0 +1,98 @@
+modeltype: &modeltype sam_cnn
+dataset_name: AFK_WZY
+sam_prefix: iou-sam-b
+analyse: False
+
+epoch_max: 25
+epoch_val: 1
+epoch_save: 1
+
+eval_type: iou
+optimizer:
+  name: adamw
+  args:
+    lr: 0.0005
+lr_min: 1.0e-07
+
+sam_checkpoint: ./pretrained/sam_vit_b_01ec64.pth
+
+train_dataset:
+  dataset:
+    name: paired-image-folders
+    args:
+      root_path_1: ./load/datasetname/dataset/Train
+      root_path_2: ./load/datasetname/dataset/Train_gt
+      cache: none
+      split_key: 
+      first_k: 600
+  wrapper:
+    name: train
+    args:
+      inp_size: 1024
+      augment: True
+  batch_size: 1
+val_dataset:
+  dataset:
+    name: paired-image-folders
+    args:
+      root_path_1: ./load/datasetname/dataset/Val
+      root_path_2: ./load/datasetname/dataset/Val_gt
+      cache: none
+      split_key: 
+      first_k: 200
+  wrapper:
+    name: val
+    args:
+      inp_size: 1024
+      augment: false
+  batch_size: 1
+ana_dataset:
+  dataset:
+    name: paired-image-folders
+    args:
+      root_path_1: ./load/datasetname/dataset/Val
+      root_path_2: ./load/datasetname/dataset/Val_gt
+      cache: none
+      split_key: 
+      first_k: 2
+  wrapper:
+    name: ana
+    args:
+      inp_size: 1024
+      augment: false
+  batch_size: 1
+  
+data_norm: None
+
+model:
+  name: *modeltype
+  args:
+    inp_size: 1024
+    loss: iou
+    encoder_mode:
+      name: None
+      img_size: 1024
+      mlp_ratio: 4
+      patch_size: 16
+      qkv_bias: true
+      use_rel_pos: true
+      window_size: 14
+      out_chans: 256
+      scale_factor: 32
+      input_type: fft
+      freq_nums: 0.25
+      prompt_type: highpass
+      prompt_embed_dim: 256
+      tuning_stage: 1234
+      handcrafted_tune: true
+      embedding_tune: true
+      adaptor: adaptor
+      embed_dim: 768
+      depth: 12
+      num_heads: 12
+      global_attn_indexes:
+      - 2
+      - 5
+      - 8
+      - 11
+    

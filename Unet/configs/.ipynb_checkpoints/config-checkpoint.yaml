@@ -1,0 +1,15 @@
+name: 'Unet-RGB'
+
+train_dir: '/home/zk374122/ding/NAMRC/src/dataset/train'
+train_gt_dir: '/home/zk374122/ding/NAMRC/src/dataset/train_gt'
+val_train_dir: '/home/zk374122/ding/NAMRC/src/dataset/val'
+val_gt_dir: '/home/zk374122/ding/NAMRC/src/dataset/val_gt'
+save_path: '/home/zk374122/ding/NAMRC/Unet/save'
+
+need_transform : True
+need_L1L2 : False
+
+ratio: 1.0
+batch_size: 2
+epochs: 100
+learning_rate: 0.00005

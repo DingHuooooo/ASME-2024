@@ -1,0 +1,11 @@
+# Ignore specific file
+
+
+# Ignore all files in a directory
+
+# Ignore files with a specific extension
+*.pth
+*.png
+*.jpg
+# Ignore files matching a pattern
+events.out.tfevents.*

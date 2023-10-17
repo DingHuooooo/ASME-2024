@@ -1,0 +1,101 @@
+epoch_max: 100
+
+tag: &modelvalue sam_adapter
+
+optimizer:
+  name: adamw
+  args:
+    lr: 0.0002
+lr_min: 1.0e-07
+
+PYTORCH_CUDA_ALLOC_CONF: max_split_size_mb:128
+# export PYTORCH_CUDA_ALLOC_CONF="max_split_size_mb:128"
+
+train_dataset:
+  dataset:
+    name: paired-image-folders
+    args:
+      root_path_1: ./load/AVM2022/dataset/Train
+      root_path_2: ./load/AVM2022/dataset/Train_gt
+      cache: none
+      split_key: train
+      first_k: 600
+  wrapper:
+    name: train
+    args:
+      inp_size: 1024
+      augment: false
+  batch_size: 1
+val_dataset:
+  dataset:
+    name: paired-image-folders
+    args:
+      root_path_1: ./load/AVM2022/dataset/Val
+      root_path_2: ./load/AVM2022/dataset/Val_gt
+      cache: none
+      split_key: val
+      first_k: 200
+  wrapper:
+    name: val
+    args:
+      inp_size: 1024
+      augment: false
+  batch_size: 1
+pre_dataset:
+  dataset:
+    name: paired-image-folders
+    args:
+      root_path_1: ./load/AVM2022/dataset/Pre
+      root_path_2: ./load/AVM2022/dataset/Pre_gt
+      cache: none
+      split_key: pre
+      first_k: 
+  wrapper:
+    name: pre
+    args:
+      inp_size: 1024
+      augment: false
+  batch_size: 1
+  
+data_norm:
+  inp:
+    sub: [0, 0, 0]
+    div: [1, 1, 1]
+    
+eval_type: iou
+sam_checkpoint: ./pretrained/sam_vit_l_0b3195.pth
+
+model:
+  name: *modelvalue
+  args:
+    inp_size: 1024
+    loss: iou
+    encoder_mode:
+      name: None
+      img_size: 1024
+      mlp_ratio: 4
+      patch_size: 16
+      qkv_bias: true
+      use_rel_pos: true
+      window_size: 14
+      out_chans: 256
+      scale_factor: 32
+      input_type: fft
+      freq_nums: 0.25
+      prompt_type: highpass
+      prompt_embed_dim: 256
+      tuning_stage: 1234
+      handcrafted_tune: true
+      embedding_tune: true
+      adaptor: adaptor
+      embed_dim: 1024
+      depth: 24
+      num_heads: 16
+      global_attn_indexes:
+      - 5
+      - 11
+      - 17
+      - 23
+    
+epoch_val: 1
+epoch_save: 1

@@ -1,0 +1,204 @@
+Total number of parameters in the model: 31.0M
+Using 2 GPUs for training.
+The size of the training is torch.Size([3, 1024, 1024]), with number of images 210
+The size of the validation is torch.Size([3, 1024, 1024]), with number of images 190
+All processes have the same model parameters.
+Epoch 1/100, Training Loss: 1.5003, Training IOU: 0.0477, Training IOU with Threshold: 0.0000 Validation Loss: 1.3004, Validation IoU: 0.0435, Validation IOU with Threshold: 0.0000
+All processes have the same model parameters.
+Epoch 2/100, Training Loss: 1.2201, Training IOU: 0.0316, Training IOU with Threshold: 0.0000 Validation Loss: 1.2013, Validation IoU: 0.0379, Validation IOU with Threshold: 0.0000
+All processes have the same model parameters.
+Epoch 3/100, Training Loss: 1.1716, Training IOU: 0.0473, Training IOU with Threshold: 0.0000 Validation Loss: 1.1762, Validation IoU: 0.0426, Validation IOU with Threshold: 0.0000
+All processes have the same model parameters.
+Epoch 4/100, Training Loss: 1.1559, Training IOU: 0.0598, Training IOU with Threshold: 0.0000 Validation Loss: 1.1604, Validation IoU: 0.0577, Validation IOU with Threshold: 0.0000
+All processes have the same model parameters.
+Epoch 5/100, Training Loss: 1.1034, Training IOU: 0.0973, Training IOU with Threshold: 0.0000 Validation Loss: 1.0048, Validation IoU: 0.1714, Validation IOU with Threshold: 0.0000
+All processes have the same model parameters.
+Epoch 6/100, Training Loss: 0.8666, Training IOU: 0.2857, Training IOU with Threshold: 0.2694 Validation Loss: 0.8844, Validation IoU: 0.3620, Validation IOU with Threshold: 0.3746
+All processes have the same model parameters.
+Epoch 7/100, Training Loss: 0.7257, Training IOU: 0.4258, Training IOU with Threshold: 0.4733 Validation Loss: 0.7362, Validation IoU: 0.3999, Validation IOU with Threshold: 0.4709
+All processes have the same model parameters.
+Epoch 8/100, Training Loss: 0.6504, Training IOU: 0.4947, Training IOU with Threshold: 0.5372 Validation Loss: 0.6874, Validation IoU: 0.4884, Validation IOU with Threshold: 0.5116
+All processes have the same model parameters.
+Epoch 9/100, Training Loss: 0.6042, Training IOU: 0.5118, Training IOU with Threshold: 0.5586 Validation Loss: 0.5961, Validation IoU: 0.5216, Validation IOU with Threshold: 0.5581
+All processes have the same model parameters.
+Epoch 10/100, Training Loss: 0.5733, Training IOU: 0.5402, Training IOU with Threshold: 0.5733 Validation Loss: 0.6397, Validation IoU: 0.4901, Validation IOU with Threshold: 0.5275
+All processes have the same model parameters.
+Epoch 11/100, Training Loss: 0.5201, Training IOU: 0.5821, Training IOU with Threshold: 0.6124 Validation Loss: 0.5187, Validation IoU: 0.5802, Validation IOU with Threshold: 0.6134
+All processes have the same model parameters.
+Epoch 12/100, Training Loss: 0.5269, Training IOU: 0.5766, Training IOU with Threshold: 0.6081 Validation Loss: 0.5379, Validation IoU: 0.5621, Validation IOU with Threshold: 0.5924
+All processes have the same model parameters.
+Epoch 13/100, Training Loss: 0.5094, Training IOU: 0.5929, Training IOU with Threshold: 0.6204 Validation Loss: 0.5611, Validation IoU: 0.5712, Validation IOU with Threshold: 0.5872
+All processes have the same model parameters.
+Epoch 14/100, Training Loss: 0.4884, Training IOU: 0.6059, Training IOU with Threshold: 0.6323 Validation Loss: 0.5200, Validation IoU: 0.5993, Validation IOU with Threshold: 0.6214
+All processes have the same model parameters.
+Epoch 15/100, Training Loss: 0.4836, Training IOU: 0.6108, Training IOU with Threshold: 0.6371 Validation Loss: 0.4937, Validation IoU: 0.5845, Validation IOU with Threshold: 0.6350
+All processes have the same model parameters.
+Epoch 16/100, Training Loss: 0.4422, Training IOU: 0.6420, Training IOU with Threshold: 0.6669 Validation Loss: 0.4825, Validation IoU: 0.6152, Validation IOU with Threshold: 0.6340
+All processes have the same model parameters.
+Epoch 17/100, Training Loss: 0.4722, Training IOU: 0.6189, Training IOU with Threshold: 0.6436 Validation Loss: 0.5001, Validation IoU: 0.5996, Validation IOU with Threshold: 0.6253
+All processes have the same model parameters.
+Epoch 18/100, Training Loss: 0.4572, Training IOU: 0.6318, Training IOU with Threshold: 0.6560 Validation Loss: 0.4807, Validation IoU: 0.6090, Validation IOU with Threshold: 0.6440
+All processes have the same model parameters.
+Epoch 19/100, Training Loss: 0.4280, Training IOU: 0.6553, Training IOU with Threshold: 0.6813 Validation Loss: 0.4729, Validation IoU: 0.6164, Validation IOU with Threshold: 0.6441
+All processes have the same model parameters.
+Epoch 20/100, Training Loss: 0.4213, Training IOU: 0.6610, Training IOU with Threshold: 0.6810 Validation Loss: 0.4290, Validation IoU: 0.6575, Validation IOU with Threshold: 0.6777
+All processes have the same model parameters.
+Epoch 21/100, Training Loss: 0.3963, Training IOU: 0.6764, Training IOU with Threshold: 0.6981 Validation Loss: 0.4531, Validation IoU: 0.6457, Validation IOU with Threshold: 0.6601
+All processes have the same model parameters.
+Epoch 22/100, Training Loss: 0.3801, Training IOU: 0.6909, Training IOU with Threshold: 0.7087 Validation Loss: 0.4221, Validation IoU: 0.6645, Validation IOU with Threshold: 0.6849
+All processes have the same model parameters.
+Epoch 23/100, Training Loss: 0.3785, Training IOU: 0.6930, Training IOU with Threshold: 0.7121 Validation Loss: 0.4339, Validation IoU: 0.6443, Validation IOU with Threshold: 0.6735
+All processes have the same model parameters.
+Epoch 24/100, Training Loss: 0.3606, Training IOU: 0.7061, Training IOU with Threshold: 0.7239 Validation Loss: 0.4624, Validation IoU: 0.6472, Validation IOU with Threshold: 0.6572
+All processes have the same model parameters.
+Epoch 25/100, Training Loss: 0.3581, Training IOU: 0.7079, Training IOU with Threshold: 0.7257 Validation Loss: 0.4520, Validation IoU: 0.6404, Validation IOU with Threshold: 0.6564
+All processes have the same model parameters.
+Epoch 26/100, Training Loss: 0.3574, Training IOU: 0.7066, Training IOU with Threshold: 0.7239 Validation Loss: 0.4823, Validation IoU: 0.6319, Validation IOU with Threshold: 0.6413
+All processes have the same model parameters.
+Epoch 27/100, Training Loss: 0.3549, Training IOU: 0.7136, Training IOU with Threshold: 0.7309 Validation Loss: 0.4099, Validation IoU: 0.6779, Validation IOU with Threshold: 0.6941
+All processes have the same model parameters.
+Epoch 28/100, Training Loss: 0.3281, Training IOU: 0.7315, Training IOU with Threshold: 0.7476 Validation Loss: 0.3896, Validation IoU: 0.6876, Validation IOU with Threshold: 0.7024
+All processes have the same model parameters.
+Epoch 29/100, Training Loss: 0.3245, Training IOU: 0.7353, Training IOU with Threshold: 0.7507 Validation Loss: 0.4254, Validation IoU: 0.6603, Validation IOU with Threshold: 0.6751
+All processes have the same model parameters.
+Epoch 30/100, Training Loss: 0.3407, Training IOU: 0.7228, Training IOU with Threshold: 0.7377 Validation Loss: 0.4807, Validation IoU: 0.6158, Validation IOU with Threshold: 0.6356
+All processes have the same model parameters.
+Epoch 31/100, Training Loss: 0.3317, Training IOU: 0.7296, Training IOU with Threshold: 0.7474 Validation Loss: 0.4102, Validation IoU: 0.6844, Validation IOU with Threshold: 0.6948
+All processes have the same model parameters.
+Epoch 32/100, Training Loss: 0.3047, Training IOU: 0.7498, Training IOU with Threshold: 0.7638 Validation Loss: 0.3643, Validation IoU: 0.7160, Validation IOU with Threshold: 0.7277
+All processes have the same model parameters.
+Epoch 33/100, Training Loss: 0.3241, Training IOU: 0.7346, Training IOU with Threshold: 0.7496 Validation Loss: 0.3334, Validation IoU: 0.7390, Validation IOU with Threshold: 0.7506
+All processes have the same model parameters.
+Epoch 34/100, Training Loss: 0.2915, Training IOU: 0.7608, Training IOU with Threshold: 0.7743 Validation Loss: 0.3403, Validation IoU: 0.7334, Validation IOU with Threshold: 0.7435
+All processes have the same model parameters.
+Epoch 35/100, Training Loss: 0.2978, Training IOU: 0.7561, Training IOU with Threshold: 0.7690 Validation Loss: 0.3541, Validation IoU: 0.7198, Validation IOU with Threshold: 0.7309
+All processes have the same model parameters.
+Epoch 36/100, Training Loss: 0.2647, Training IOU: 0.7813, Training IOU with Threshold: 0.7936 Validation Loss: 0.3248, Validation IoU: 0.7478, Validation IOU with Threshold: 0.7566
+All processes have the same model parameters.
+Epoch 37/100, Training Loss: 0.2933, Training IOU: 0.7603, Training IOU with Threshold: 0.7732 Validation Loss: 0.3403, Validation IoU: 0.7286, Validation IOU with Threshold: 0.7423
+All processes have the same model parameters.
+Epoch 38/100, Training Loss: 0.2608, Training IOU: 0.7861, Training IOU with Threshold: 0.7991 Validation Loss: 0.3432, Validation IoU: 0.7339, Validation IOU with Threshold: 0.7429
+All processes have the same model parameters.
+Epoch 39/100, Training Loss: 0.2580, Training IOU: 0.7888, Training IOU with Threshold: 0.7999 Validation Loss: 0.3121, Validation IoU: 0.7534, Validation IOU with Threshold: 0.7643
+All processes have the same model parameters.
+Epoch 40/100, Training Loss: 0.2600, Training IOU: 0.7874, Training IOU with Threshold: 0.7997 Validation Loss: 0.3200, Validation IoU: 0.7451, Validation IOU with Threshold: 0.7588
+All processes have the same model parameters.
+Epoch 41/100, Training Loss: 0.2516, Training IOU: 0.7933, Training IOU with Threshold: 0.8040 Validation Loss: 0.3203, Validation IoU: 0.7461, Validation IOU with Threshold: 0.7575
+All processes have the same model parameters.
+Epoch 42/100, Training Loss: 0.2469, Training IOU: 0.7962, Training IOU with Threshold: 0.8080 Validation Loss: 0.3283, Validation IoU: 0.7469, Validation IOU with Threshold: 0.7553
+All processes have the same model parameters.
+Epoch 43/100, Training Loss: 0.2472, Training IOU: 0.7977, Training IOU with Threshold: 0.8084 Validation Loss: 0.3608, Validation IoU: 0.7131, Validation IOU with Threshold: 0.7257
+All processes have the same model parameters.
+Epoch 44/100, Training Loss: 0.2409, Training IOU: 0.8011, Training IOU with Threshold: 0.8127 Validation Loss: 0.3174, Validation IoU: 0.7577, Validation IOU with Threshold: 0.7653
+All processes have the same model parameters.
+Epoch 45/100, Training Loss: 0.2461, Training IOU: 0.7989, Training IOU with Threshold: 0.8091 Validation Loss: 0.3309, Validation IoU: 0.7453, Validation IOU with Threshold: 0.7525
+All processes have the same model parameters.
+Epoch 46/100, Training Loss: 0.2245, Training IOU: 0.8159, Training IOU with Threshold: 0.8264 Validation Loss: 0.3220, Validation IoU: 0.7524, Validation IOU with Threshold: 0.7601
+All processes have the same model parameters.
+Epoch 47/100, Training Loss: 0.2252, Training IOU: 0.8157, Training IOU with Threshold: 0.8251 Validation Loss: 0.3138, Validation IoU: 0.7516, Validation IOU with Threshold: 0.7625
+All processes have the same model parameters.
+Epoch 48/100, Training Loss: 0.2229, Training IOU: 0.8160, Training IOU with Threshold: 0.8263 Validation Loss: 0.2869, Validation IoU: 0.7774, Validation IOU with Threshold: 0.7852
+All processes have the same model parameters.
+Epoch 49/100, Training Loss: 0.2279, Training IOU: 0.8125, Training IOU with Threshold: 0.8225 Validation Loss: 0.3060, Validation IoU: 0.7637, Validation IOU with Threshold: 0.7712
+All processes have the same model parameters.
+Epoch 50/100, Training Loss: 0.2100, Training IOU: 0.8268, Training IOU with Threshold: 0.8363 Validation Loss: 0.3317, Validation IoU: 0.7515, Validation IOU with Threshold: 0.7566
+All processes have the same model parameters.
+Epoch 51/100, Training Loss: 0.2256, Training IOU: 0.8157, Training IOU with Threshold: 0.8251 Validation Loss: 0.3199, Validation IoU: 0.7508, Validation IOU with Threshold: 0.7591
+All processes have the same model parameters.
+Epoch 52/100, Training Loss: 0.2736, Training IOU: 0.7775, Training IOU with Threshold: 0.7901 Validation Loss: 0.3507, Validation IoU: 0.7283, Validation IOU with Threshold: 0.7378
+All processes have the same model parameters.
+Epoch 53/100, Training Loss: 0.2066, Training IOU: 0.8292, Training IOU with Threshold: 0.8388 Validation Loss: 0.2905, Validation IoU: 0.7776, Validation IOU with Threshold: 0.7841
+All processes have the same model parameters.
+Epoch 54/100, Training Loss: 0.1884, Training IOU: 0.8451, Training IOU with Threshold: 0.8533 Validation Loss: 0.2936, Validation IoU: 0.7758, Validation IOU with Threshold: 0.7819
+All processes have the same model parameters.
+Epoch 55/100, Training Loss: 0.1958, Training IOU: 0.8397, Training IOU with Threshold: 0.8480 Validation Loss: 0.3053, Validation IoU: 0.7648, Validation IOU with Threshold: 0.7723
+All processes have the same model parameters.
+Epoch 56/100, Training Loss: 0.2134, Training IOU: 0.8255, Training IOU with Threshold: 0.8353 Validation Loss: 0.3020, Validation IoU: 0.7649, Validation IOU with Threshold: 0.7729
+All processes have the same model parameters.
+Epoch 57/100, Training Loss: 0.1862, Training IOU: 0.8465, Training IOU with Threshold: 0.8547 Validation Loss: 0.3168, Validation IoU: 0.7580, Validation IOU with Threshold: 0.7652
+All processes have the same model parameters.
+Epoch 58/100, Training Loss: 0.1979, Training IOU: 0.8387, Training IOU with Threshold: 0.8470 Validation Loss: 0.3497, Validation IoU: 0.7330, Validation IOU with Threshold: 0.7415
+All processes have the same model parameters.
+Epoch 59/100, Training Loss: 0.2018, Training IOU: 0.8340, Training IOU with Threshold: 0.8429 Validation Loss: 0.3267, Validation IoU: 0.7492, Validation IOU with Threshold: 0.7561
+All processes have the same model parameters.
+Epoch 60/100, Training Loss: 0.1919, Training IOU: 0.8415, Training IOU with Threshold: 0.8495 Validation Loss: 0.2967, Validation IoU: 0.7766, Validation IOU with Threshold: 0.7825
+All processes have the same model parameters.
+Epoch 61/100, Training Loss: 0.1806, Training IOU: 0.8516, Training IOU with Threshold: 0.8596 Validation Loss: 0.3362, Validation IoU: 0.7493, Validation IOU with Threshold: 0.7555
+All processes have the same model parameters.
+Epoch 62/100, Training Loss: 0.1921, Training IOU: 0.8417, Training IOU with Threshold: 0.8502 Validation Loss: 0.2804, Validation IoU: 0.7854, Validation IOU with Threshold: 0.7907
+All processes have the same model parameters.
+Epoch 63/100, Training Loss: 0.1725, Training IOU: 0.8580, Training IOU with Threshold: 0.8653 Validation Loss: 0.2833, Validation IoU: 0.7817, Validation IOU with Threshold: 0.7881
+All processes have the same model parameters.
+Epoch 64/100, Training Loss: 0.1796, Training IOU: 0.8526, Training IOU with Threshold: 0.8603 Validation Loss: 0.2755, Validation IoU: 0.7900, Validation IOU with Threshold: 0.7963
+All processes have the same model parameters.
+Epoch 65/100, Training Loss: 0.1793, Training IOU: 0.8512, Training IOU with Threshold: 0.8589 Validation Loss: 0.2946, Validation IoU: 0.7740, Validation IOU with Threshold: 0.7804
+All processes have the same model parameters.
+Epoch 66/100, Training Loss: 0.1637, Training IOU: 0.8647, Training IOU with Threshold: 0.8718 Validation Loss: 0.2932, Validation IoU: 0.7745, Validation IOU with Threshold: 0.7804
+All processes have the same model parameters.
+Epoch 67/100, Training Loss: 0.1721, Training IOU: 0.8584, Training IOU with Threshold: 0.8657 Validation Loss: 0.2746, Validation IoU: 0.7905, Validation IOU with Threshold: 0.7958
+All processes have the same model parameters.
+Epoch 68/100, Training Loss: 0.1727, Training IOU: 0.8580, Training IOU with Threshold: 0.8651 Validation Loss: 0.2911, Validation IoU: 0.7829, Validation IOU with Threshold: 0.7874
+All processes have the same model parameters.
+Epoch 69/100, Training Loss: 0.1619, Training IOU: 0.8664, Training IOU with Threshold: 0.8734 Validation Loss: 0.2913, Validation IoU: 0.7814, Validation IOU with Threshold: 0.7866
+All processes have the same model parameters.
+Epoch 70/100, Training Loss: 0.1619, Training IOU: 0.8663, Training IOU with Threshold: 0.8731 Validation Loss: 0.3059, Validation IoU: 0.7673, Validation IOU with Threshold: 0.7737
+All processes have the same model parameters.
+Epoch 71/100, Training Loss: 0.1600, Training IOU: 0.8674, Training IOU with Threshold: 0.8744 Validation Loss: 0.2940, Validation IoU: 0.7802, Validation IOU with Threshold: 0.7848
+All processes have the same model parameters.
+Epoch 72/100, Training Loss: 0.1528, Training IOU: 0.8739, Training IOU with Threshold: 0.8807 Validation Loss: 0.2718, Validation IoU: 0.7945, Validation IOU with Threshold: 0.7993
+All processes have the same model parameters.
+Epoch 73/100, Training Loss: 0.1627, Training IOU: 0.8660, Training IOU with Threshold: 0.8723 Validation Loss: 0.3018, Validation IoU: 0.7769, Validation IOU with Threshold: 0.7815
+All processes have the same model parameters.
+Epoch 74/100, Training Loss: 0.1980, Training IOU: 0.8375, Training IOU with Threshold: 0.8464 Validation Loss: 0.2951, Validation IoU: 0.7773, Validation IOU with Threshold: 0.7826
+All processes have the same model parameters.
+Epoch 75/100, Training Loss: 0.1624, Training IOU: 0.8668, Training IOU with Threshold: 0.8735 Validation Loss: 0.2853, Validation IoU: 0.7826, Validation IOU with Threshold: 0.7891
+All processes have the same model parameters.
+Epoch 76/100, Training Loss: 0.1542, Training IOU: 0.8719, Training IOU with Threshold: 0.8783 Validation Loss: 0.2667, Validation IoU: 0.7979, Validation IOU with Threshold: 0.8029
+All processes have the same model parameters.
+Epoch 77/100, Training Loss: 0.1549, Training IOU: 0.8718, Training IOU with Threshold: 0.8781 Validation Loss: 0.2661, Validation IoU: 0.7992, Validation IOU with Threshold: 0.8038
+All processes have the same model parameters.
+Epoch 78/100, Training Loss: 0.1533, Training IOU: 0.8737, Training IOU with Threshold: 0.8803 Validation Loss: 0.3027, Validation IoU: 0.7748, Validation IOU with Threshold: 0.7799
+All processes have the same model parameters.
+Epoch 79/100, Training Loss: 0.1553, Training IOU: 0.8714, Training IOU with Threshold: 0.8777 Validation Loss: 0.3056, Validation IoU: 0.7758, Validation IOU with Threshold: 0.7805
+All processes have the same model parameters.
+Epoch 80/100, Training Loss: 0.1496, Training IOU: 0.8773, Training IOU with Threshold: 0.8834 Validation Loss: 0.2854, Validation IoU: 0.7845, Validation IOU with Threshold: 0.7896
+All processes have the same model parameters.
+Epoch 81/100, Training Loss: 0.1528, Training IOU: 0.8734, Training IOU with Threshold: 0.8800 Validation Loss: 0.2832, Validation IoU: 0.7828, Validation IOU with Threshold: 0.7889
+All processes have the same model parameters.
+Epoch 82/100, Training Loss: 0.1440, Training IOU: 0.8811, Training IOU with Threshold: 0.8870 Validation Loss: 0.2751, Validation IoU: 0.7909, Validation IOU with Threshold: 0.7964
+All processes have the same model parameters.
+Epoch 83/100, Training Loss: 0.1386, Training IOU: 0.8850, Training IOU with Threshold: 0.8909 Validation Loss: 0.2720, Validation IoU: 0.7955, Validation IOU with Threshold: 0.7999
+All processes have the same model parameters.
+Epoch 84/100, Training Loss: 0.1500, Training IOU: 0.8764, Training IOU with Threshold: 0.8824 Validation Loss: 0.2839, Validation IoU: 0.7905, Validation IOU with Threshold: 0.7945
+All processes have the same model parameters.
+Epoch 85/100, Training Loss: 0.1582, Training IOU: 0.8688, Training IOU with Threshold: 0.8754 Validation Loss: 0.3109, Validation IoU: 0.7700, Validation IOU with Threshold: 0.7767
+All processes have the same model parameters.
+Epoch 86/100, Training Loss: 0.1583, Training IOU: 0.8694, Training IOU with Threshold: 0.8758 Validation Loss: 0.3101, Validation IoU: 0.7753, Validation IOU with Threshold: 0.7800
+All processes have the same model parameters.
+Epoch 87/100, Training Loss: 0.1609, Training IOU: 0.8670, Training IOU with Threshold: 0.8735 Validation Loss: 0.2713, Validation IoU: 0.8001, Validation IOU with Threshold: 0.8042
+All processes have the same model parameters.
+Epoch 88/100, Training Loss: 0.1357, Training IOU: 0.8880, Training IOU with Threshold: 0.8939 Validation Loss: 0.2809, Validation IoU: 0.7900, Validation IOU with Threshold: 0.7941
+All processes have the same model parameters.
+Epoch 89/100, Training Loss: 0.1535, Training IOU: 0.8730, Training IOU with Threshold: 0.8795 Validation Loss: 0.2681, Validation IoU: 0.8007, Validation IOU with Threshold: 0.8048
+All processes have the same model parameters.
+Epoch 90/100, Training Loss: 0.1466, Training IOU: 0.8786, Training IOU with Threshold: 0.8848 Validation Loss: 0.2624, Validation IoU: 0.8022, Validation IOU with Threshold: 0.8064
+All processes have the same model parameters.
+Epoch 91/100, Training Loss: 0.1385, Training IOU: 0.8849, Training IOU with Threshold: 0.8908 Validation Loss: 0.2847, Validation IoU: 0.7913, Validation IOU with Threshold: 0.7945
+All processes have the same model parameters.
+Epoch 92/100, Training Loss: 0.1318, Training IOU: 0.8905, Training IOU with Threshold: 0.8955 Validation Loss: 0.2822, Validation IoU: 0.7919, Validation IOU with Threshold: 0.7960
+All processes have the same model parameters.
+Epoch 93/100, Training Loss: 0.1513, Training IOU: 0.8753, Training IOU with Threshold: 0.8815 Validation Loss: 0.3016, Validation IoU: 0.7779, Validation IOU with Threshold: 0.7819
+All processes have the same model parameters.
+Epoch 94/100, Training Loss: 0.1530, Training IOU: 0.8738, Training IOU with Threshold: 0.8797 Validation Loss: 0.2651, Validation IoU: 0.8024, Validation IOU with Threshold: 0.8069
+All processes have the same model parameters.
+Epoch 95/100, Training Loss: 0.1354, Training IOU: 0.8876, Training IOU with Threshold: 0.8938 Validation Loss: 0.2754, Validation IoU: 0.7965, Validation IOU with Threshold: 0.8004
+All processes have the same model parameters.
+Epoch 96/100, Training Loss: 0.1266, Training IOU: 0.8951, Training IOU with Threshold: 0.9003 Validation Loss: 0.2593, Validation IoU: 0.8054, Validation IOU with Threshold: 0.8095
+All processes have the same model parameters.
+Epoch 97/100, Training Loss: 0.1329, Training IOU: 0.8897, Training IOU with Threshold: 0.8949 Validation Loss: 0.2719, Validation IoU: 0.7959, Validation IOU with Threshold: 0.8016
+All processes have the same model parameters.
+Epoch 98/100, Training Loss: 0.1348, Training IOU: 0.8885, Training IOU with Threshold: 0.8941 Validation Loss: 0.2824, Validation IoU: 0.7920, Validation IOU with Threshold: 0.7968
+All processes have the same model parameters.
+Epoch 99/100, Training Loss: 0.1251, Training IOU: 0.8958, Training IOU with Threshold: 0.9011 Validation Loss: 0.2641, Validation IoU: 0.8052, Validation IOU with Threshold: 0.8087
+All processes have the same model parameters.
+Epoch 100/100, Training Loss: 0.1197, Training IOU: 0.9003, Training IOU with Threshold: 0.9054 Validation Loss: 0.2600, Validation IoU: 0.8084, Validation IOU with Threshold: 0.8120

@@ -149,7 +149,16 @@ def find_points_2(unet_pre, extension_length=100):
         label_list.append(1)
     # Display the result
     input_point = np.array(points_list) if len(points_list) > 0 else None
-    input_label = np.array(label_list) if len(label_list) > 0 else None
+    input_label = np.array(label_list) if len(label_list) > 0 else None   
+    filltered_point = []
+    filltered_label = []
+    for point, label in zip(input_point, input_label):
+        if unet_pre[int(point[1]), int(point[0])] == 0 and label == 0 or label == 1:
+            # plt.scatter(point[0], point[1], color='green', marker='*', s=50, edgecolor='white', linewidth=1.25)
+            filltered_point.append(point)
+            filltered_label.append(label)
+    input_point = np.array(filltered_point) if len(points_list) > 0 else None
+    input_label = np.array(filltered_label) if len(label_list) > 0 else None
     return input_point, input_label
 
 if __name__ == "__main__":

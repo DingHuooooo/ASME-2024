@@ -89,10 +89,8 @@ def adjusted_centroid(mask, gravity_centroid):
     contours = find_contours(mask, 0.5)
     if len(contours) == 0:
         return gravity_centroid
-    
-    longest_contour = sorted(contours, key=lambda x: len(x))[-1]
-    
-    if points_in_poly([gravity_centroid], longest_contour).any():
+
+    if mask[int(gravity_centroid[0]), int(gravity_centroid[1])] == 1:
         return gravity_centroid
     
     nearest_boundary_point = closest_boundary_point(mask, gravity_centroid)
@@ -100,10 +98,20 @@ def adjusted_centroid(mask, gravity_centroid):
     direction_vector /= np.linalg.norm(direction_vector)
     intersections = intersection_points(mask, gravity_centroid, direction_vector)
     
+    def custom_round(direction_vector):
+        # 根据规则，如果元素的绝对值大于或等于0.5，就取最近的整数；否则，就保留原值
+        rounded_vector = np.where(np.abs(direction_vector) >= 0.5, np.round(direction_vector), direction_vector)
+        return rounded_vector.astype(int)  # 转换为整数
+
     if len(intersections) < 2:
         return gravity_centroid  # Safety fallback
+    else:
+        for point in intersections:
+            if mask[int(point[0]) + custom_round(direction_vector)[0], int(point[1]) + custom_round(direction_vector)[1]] == 0:
+                end_point = point
+                break
     
-    return np.mean(intersections, axis=0)
+    return np.mean([intersections[0], end_point], axis=0)
 
 def closest_boundary_point(mask, point):
     # 1. Identify the contours of the mask.
@@ -209,11 +217,11 @@ def check_and_adjust_centroids(mask, depth=0, max_depth=3):
                 nearest_boundary_point = closest_boundary_point(region_mask, gravity_centroid)
                 direction_vector = nearest_boundary_point - gravity_centroid
                 perpendicular_vector = np.array([-direction_vector[1], direction_vector[0]])
-                cut_mask = bisect_region(mask, gravity_centroid, perpendicular_vector)
+                cut_mask = bisect_region(region_mask, gravity_centroid, perpendicular_vector)
             else:
                 nearest_boundary_point = closest_boundary_point(region_mask, gravity_centroid)
                 direction_vector = nearest_boundary_point - gravity_centroid
-                cut_mask = bisect_region(mask, gravity_centroid, direction_vector)
+                cut_mask = bisect_region(region_mask, gravity_centroid, direction_vector)
             centroids += check_and_adjust_centroids(cut_mask, depth + 1)
         else:
             centroids.append(gravity_centroid)
